@@ -1,0 +1,173 @@
+$cyan: #00aeef;
+
+/* allgemeines */
+body	{
+	margin:0;
+	background-color:#fff;
+}
+
+#bodyWrap	{
+	background-image:url('/images/bg_1.jpg');
+	background-repeat: no-repeat;
+	min-height:700px;
+}
+
+#ctaContainer img	{
+	display:block;
+	margin-bottom:50px;
+}
+#impressum	{
+	display: block;
+	margin: 20px 0;
+	text-align: center;
+	color: black;
+}
+a,em	{
+	color:$cyan;
+}
+::selection {
+	background: $cyan; /* Safari */
+	color:#fff;
+	}
+::-moz-selection {
+	background: $cyan; /* Firefox */
+	color:#fff;
+}
+
+
+/*Main Container*/
+.container {
+	width:100%;
+	overflow:hidden;
+	font-family:Georgia;
+	line-height:1.3rem;
+}
+.container ul{
+	list-style-type: none;
+	padding-top:30px;
+}
+.container li{
+	margin: 0;
+	padding: 0;
+	max-width: 40rem;
+	background-color: transparent;
+}
+
+/*Content Container*/
+.contentWrapper{
+	margin-top:8px;	
+}
+.contentInnerWrapper{
+	text-align: left;
+	padding: 0 10px;
+	min-width: 280px;
+}
+.contentInnerWrapper p{
+	margin-top: 0;
+}
+
+/* Handle*/
+.handle{
+	display:inline;
+	padding: 0 2px;
+	margin-right:25px;
+	margin-left:8px;
+}
+
+
+/*Specifics*/
+
+#ctaContainer {
+	position:relative;
+	width: 220px;
+}
+
+@media only screen and (min-width: 1200px) {
+	#bodyWrap	{
+		width:1200px;
+		margin:0 auto;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/* Tablets and Desktop */
+	/*Main Container*/
+	#ctaContainer {
+		left: 510px;
+    	top: 100px;
+	}
+	.container li {
+		position: relative;
+		display:inline-block;
+		top:0;
+		left:0;
+	}
+	.container ul{
+		width:200%;
+		padding-left:30px;
+	}
+	/* hide container until all is ready */
+	.content {
+		margin-top:154px;
+	}
+
+	/*Content Container*/
+	.contentContainer {
+		padding-right: 15px;	
+		float: left;
+		overflow:visible;
+	}
+	
+	/*Handle*/
+	.handle {
+		cursor:pointer;
+	}
+	.handleOver, .handleSelected {	
+		border-bottom: 2px solid $cyan;
+	    padding: 0 2px;
+	}
+
+	/* Specifics */
+	#imgInhalt	{
+		width: 60px;
+	}
+	#imgZitieren	{
+		width: 87px;
+	}
+	#imgKontakt	{
+		width: 84px;
+	}
+	#imgLike	{
+		width: 109px;
+	}
+	#contentListItem0	{
+		width:400px;
+	}
+	#contentListItem1	{
+		width:400px;
+	}
+	#contentListItem2	{
+		width:280px;
+	}
+	#contentListItem3	{
+		width:150px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    /* Phones */
+
+    #ctaContainer {
+		position: inherit;
+		padding-top: 210px;
+		margin: 0 auto;
+	}
+	.container ul {
+		padding-left:10px;
+	}
+	.container li {
+		position: inherit;
+		display: block;
+		margin-bottom: 3rem;
+	}
+}
